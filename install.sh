@@ -12,5 +12,5 @@ source_path=$(pwd)
 
 cd $1 
 
-rm $1/fourcut
+rm $1/fourcut 2>/dev/null || true
 ln -s $source_path/four_cut.py fourcut
