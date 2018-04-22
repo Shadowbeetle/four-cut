@@ -6,13 +6,12 @@ A lot of password managers store credit card number as contiguous strings. And t
 
 # Dependencies
 
-* python3
-* pip3
-* pyperclip 
-* readchar
+* `python3`
+* `pip3`
+* everything in `requirements.txt`
 
 ```sh
-$ pip3 install pyperclip readchar
+$ pip3 install -r requirements.txt
 ```
 
 # Install
