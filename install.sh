@@ -10,7 +10,7 @@ start_dir=$(pwd)
 cd $(dirname "${BASH_SOURCE[0]}")
 source_path=$(pwd)
 
-echo $1
 cd $1 
 
-ln -s $source_path/four-cut.py fourcut
+rm $1/fourcut
+ln -s $source_path/four_cut.py fourcut
