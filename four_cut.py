@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Easier credit card number input for non-autofillable online forms.
+"""
 import sys
 import argparse
 import pyperclip
@@ -6,6 +9,9 @@ from readchar import readchar
 
 
 def main():
+    """main
+    main function
+    """
     argument_parser = argparse.ArgumentParser()
     argument_parser.add_argument(
         "input", help="the input to be spearated to groups of four")
@@ -27,6 +33,12 @@ def main():
 
 
 def four_cut(array_of_fours, idx=0):
+    """four_cut(array_of_fours, idx=0)
+
+    Keyword arguments:
+    array_of_fours -- list of stings
+    idx -- integer (default 0)
+    """
     for (i, chunk) in enumerate(array_of_fours[idx:]):
         print("Next chunk: %s" % chunk)
         print("Would you like to (c)opy or (e)xit [c/e] ", end="", flush=True)
