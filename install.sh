@@ -5,6 +5,8 @@ if [ $1 = "-h" ]; then
     exit 0
 fi
 
+pip3 install pyperclip readchar --user
+
 start_dir=$(pwd)
 
 cd $(dirname "${BASH_SOURCE[0]}")
