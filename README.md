@@ -14,6 +14,21 @@ A lot of password managers store credit card number as contiguous strings. And t
 $ pip3 install -r requirements.txt
 ```
 
+If you get the following error on OSX:
+
+```sh
+$ ./install.sh
+Could not fetch URL https://pypi.python.org/simple/pyperclip/: There was a problem confirming the ssl certificate
+```
+
+it means that you are using an old version of pip and you need to update it:
+
+``` sh
+curl https://bootstrap.pypa.io/get-pip.py | python3
+```
+
+You can read more on the issue [here](https://mail.python.org/pipermail/python-announce-list/2018-April/011885.html)
+
 # Install
 
 The install script only works on Unix based systems. Pull requests are welcome for windows.
