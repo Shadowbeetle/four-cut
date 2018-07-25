@@ -13,15 +13,13 @@ def main():
     main function
     """
     argument_parser = argparse.ArgumentParser()
-    argument_parser.add_argument(
-        "input", help="the input to be spearated to groups of four")
 
     argument_parser.add_argument(
         "-p", "--print", help="print the output and exit", action='store_true')
 
     args = argument_parser.parse_args()
-
-    array_of_fours = [args.input[i:i+4] for i in range(0, len(args.input), 4)]
+    input_ = input('Enter the string to be cut: ')
+    array_of_fours = [input_[i:i+4] for i in range(0, len(input_), 4)]
     string_of_fours = ' '.join(array_of_fours)
 
     if args.print:

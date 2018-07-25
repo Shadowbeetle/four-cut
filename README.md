@@ -41,10 +41,7 @@ $ ./install.sh <path-to-dir-in-your-$PATH>
 # Usage
 
 ```sh
-usage: fourcut [-h] [--print] input
-
-positional arguments:
-  input        the input to be spearated to groups of four
+usage: fourcut [-h] [--print]
 
 optional arguments:
   -h, --help   show this help message and exit
