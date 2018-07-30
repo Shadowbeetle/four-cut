@@ -39,12 +39,15 @@ def four_cut(array_of_fours, idx=0):
     """
     for (i, chunk) in enumerate(array_of_fours[idx:]):
         print("Next chunk: %s" % chunk)
-        print("Would you like to (c)opy or (e)xit [c/e] ", end="", flush=True)
+        print(
+            "Would you like to (c)opy (s)kip or (e)xit [c/s/e] ", end="", flush=True)
         answer = readchar()
 
         print(answer)
         if answer == "e":
             sys.exit(0)
+        elif answer == "s":
+            pass
         elif answer == "c":
             pyperclip.copy(chunk)
         else:
